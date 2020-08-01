@@ -1,37 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after{
     box-sizing: border-box;
-}
-body    {
-    background: #eef3f6;;
-    font-family: 'Mulish';
-}
-#header {
-    font-size: 1.3rem;
-  
-}
-#signin-container   {
-    margin-top: 15rem;
-    background: white;
-    border-radius: 10px;
-}
-#signin-form input   {
-    background-color: #f6f9fb;
+    padding: 0;
+    margin: 0;
 }
 
-#btn    {
-    
-  
-    font-size: 1rem;
+:root{
+    --ff-primary: 'Mulish', sans-serif;
+
+    --fs-h1: 3.25rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.76rem;
+    --fs-h4: 1.62rem;
+    --fs-reg: 1.23rem;
+    --fs-nav: 1rem;
+    --fs-foot: 0.85rem;
 }
-#rememberme {
+
+body{
+    font-family: var(--ff-primary);
+    background-color: #eef3f6;
+    color: #1e1633;
+}
+
+p{
+    margin: 0;
+}
+
+.signin-container{
+    margin: 5rem auto 8rem;
+    max-width: 25rem;
     text-align: center;
 }
 
-@media screen and (max-width: 760px)    {
-    #signin-container   {
-        margin-top: 3rem;
-       ;
-    }
+.signin-content{
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
 }
+
+.signin-logo{
+    margin-bottom: 3rem;
+}
+
+.signin-logo img{
+    width: 3rem;
+}
+
+.signin-header{
+    padding: 2rem 0;
+}
+
+.signin-form input{
+    margin-bottom: 1.5rem;
+    background-color: #f6f9fb;
+    border-radius: 0.35rem;
+}
+
+.signup-input{
+    font-size: var(--fs-foot);
+    padding: 0.3rem 0.9rem;
+}
+
+
+
+.signin-button{
+    background-color: #3482e2;
+    color: #ffffff;
+    padding: 0.3rem 2rem;
+    border: 1px solid #3482e2;
+    border-radius: 0.25rem;
+    font-size: var(--fs-foot);
+}
+© 2020 GitHub, Inc.
+
+
